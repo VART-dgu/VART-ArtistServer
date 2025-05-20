@@ -9,11 +9,13 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class ArtistService {
-
     private final ArtistRepository artistRepository;
 
     public void register(ArtistRegisterRequestDTO dto) {
-        Artist artist = new Artist(dto.getId(), dto.getName());
+        Artist artist = Artist.builder()
+                .id(dto.getId())
+                .name(dto.getName())
+                .build();
         artistRepository.save(artist);
     }
 }
