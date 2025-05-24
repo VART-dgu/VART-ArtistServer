@@ -7,5 +7,5 @@ import java.util.Optional;
 
 @Repository
 public interface ArtistRepository extends JpaRepository<Artist, Long> {
-    // save, findById 등은 JpaRepository가 제공하니까 선언 안 해도 됨
+    Optional<Artist> findById(String id);
 }
