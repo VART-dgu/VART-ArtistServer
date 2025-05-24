@@ -1,7 +1,7 @@
-package com.example.vartartistserver.domain.user.controller;
+package com.example.vartartistserver.user.controller;
 
-import com.example.vartartistserver.domain.user.service.ArtistService;
-import com.example.vartartistserver.domain.user.dto.ArtistRegisterRequestDTO;
+import com.example.vartartistserver.user.service.ArtistService;
+import com.example.vartartistserver.user.dto.ArtistRegisterRequestDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

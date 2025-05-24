@@ -1,4 +1,4 @@
-package com.example.vartartistserver.domain.user.entity;
+package com.example.vartartistserver.gallery.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -9,13 +9,15 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Getter @Builder
-@NoArgsConstructor
+@Builder @Getter
 @AllArgsConstructor
-public class Artist {
+@NoArgsConstructor
+public class Gallery {
     @Id @GeneratedValue
-    private Long seq;
+    private Long id;
 
-    private String id;
+    private Integer galleryId;
     private String name;
+    private String description;
+    private String mapFile;
 }

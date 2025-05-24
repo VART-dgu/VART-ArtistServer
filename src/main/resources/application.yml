@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mariadb://svc.sel4.cloudtype.app:30724/userDB
+    url: jdbc:mariadb://svc.sel4.cloudtype.app:30724/artistDB
     username: root       # ← 실제 유저명 입력
     password: vart0000       # ← 실제 비밀번호 입력
     driver-class-name: org.mariadb.jdbc.Driver
