@@ -21,4 +21,14 @@ public class GalleryService {
             return false;
         }
     }
+
+    public Boolean delete(Long galleryId) {
+        try {
+            galleryRepository.deleteById(galleryId);
+            return true;
+        } catch (Exception e) {
+            log.error("갤러리 삭제 중 예외 발생: {}", e.getMessage(), e);
+            return false;
+        }
+    }
 }
