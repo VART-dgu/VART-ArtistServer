@@ -19,6 +19,7 @@ public class ArtistService {
                 .build();
         artistRepository.save(artist);
     }
+  
     public boolean login(ArtistLoginRequestDTO dto) {
         return artistRepository.findById(dto.getId()).isPresent();
     }

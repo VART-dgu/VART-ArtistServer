@@ -20,7 +20,7 @@ public class ArtistController {
         artistService.register(dto);
         return ResponseEntity.ok("회원가입 성공");
     }
-
+  
     @PostMapping("/login")
     public ResponseEntity<String> login(@RequestBody ArtistLoginRequestDTO dto) {
         boolean result = artistService.login(dto);
@@ -37,4 +37,3 @@ public class ArtistController {
         return ResponseEntity.ok("로그아웃 성공");
     }
 }
-
