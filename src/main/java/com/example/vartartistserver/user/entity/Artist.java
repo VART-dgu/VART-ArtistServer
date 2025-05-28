@@ -1,4 +1,4 @@
-package com.example.vartartistserver.user.entity;
+package com.example.vartartistserver.domain.user.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

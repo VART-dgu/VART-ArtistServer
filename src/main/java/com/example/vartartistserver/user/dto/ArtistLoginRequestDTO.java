@@ -1,9 +1,11 @@
 package com.example.vartartistserver.domain.user.dto;
 
 import lombok.Getter;
+import lombok.Setter;
+
 
 @Getter
-public class ArtistRegisterRequestDTO {
+@Setter
+public class ArtistLoginRequestDTO {
     private String id;
-    private String name;
 }
