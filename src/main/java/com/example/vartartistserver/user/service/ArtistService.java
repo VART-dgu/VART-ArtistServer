@@ -1,9 +1,9 @@
-package com.example.vartartistserver.domain.user.service;
+package com.example.vartartistserver.user.service;
 
-import com.example.vartartistserver.domain.user.dto.ArtistRegisterRequestDTO;
-import com.example.vartartistserver.domain.user.dto.ArtistLoginRequestDTO;
-import com.example.vartartistserver.domain.user.entity.Artist;
-import com.example.vartartistserver.domain.user.repository.ArtistRepository;
+import com.example.vartartistserver.user.dto.ArtistRegisterRequestDTO;
+import com.example.vartartistserver.user.dto.ArtistLoginRequestDTO;
+import com.example.vartartistserver.user.entity.Artist;
+import com.example.vartartistserver.user.repository.ArtistRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
