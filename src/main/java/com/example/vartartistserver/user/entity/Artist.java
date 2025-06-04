@@ -1,15 +1,12 @@
-package com.example.vartartistserver.domain.user.entity;
+package com.example.vartartistserver.user.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Entity
-@Getter @Builder
+@Getter @Builder @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 public class Artist {

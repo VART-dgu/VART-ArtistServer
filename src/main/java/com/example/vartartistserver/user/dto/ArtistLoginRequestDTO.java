@@ -1,4 +1,4 @@
-package com.example.vartartistserver.domain.user.dto;
+package com.example.vartartistserver.user.dto;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,15 +1,12 @@
 package com.example.vartartistserver.gallery.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import com.example.vartartistserver.user.entity.Artist;
+import jakarta.persistence.*;
+import lombok.*;
 
 @Entity
-@Builder @Getter
+@Builder
+@Getter @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class Gallery {
@@ -20,4 +17,7 @@ public class Gallery {
     private String name;
     private String description;
     private String mapFile;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Artist artist;
 }

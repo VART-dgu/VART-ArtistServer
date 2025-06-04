@@ -9,24 +9,26 @@ import lombok.Setter;
 @Builder
 @Getter @Setter
 @AllArgsConstructor
-public class GalleryDTO {
-    private Integer galleryId;
+public class PublishRequestDTO {
+    private Long artistId;
     private String name;
     private String description;
     private String mapFile;
 
-    public static Gallery toGallery(GalleryDTO dto){
+    public PublishRequestDTO() {
+
+    }
+
+    public static Gallery toGallery(PublishRequestDTO dto){
         return Gallery.builder()
-                .galleryId(dto.getGalleryId())
                 .name(dto.getName())
                 .description(dto.getDescription())
                 .mapFile(dto.getMapFile())
                 .build();
     }
 
-    public static GalleryDTO toGalleryDTO(Gallery gallery){
-        return GalleryDTO.builder()
-                .galleryId(gallery.getGalleryId())
+    public static PublishRequestDTO toPublishRequestDTO(Gallery gallery){
+        return PublishRequestDTO.builder()
                 .name(gallery.getName())
                 .description(gallery.getDescription())
                 .mapFile(gallery.getMapFile())
